@@ -1,0 +1,11 @@
+pipeline {
+    agent { label 'master' }
+    stages {
+        stage('build') {
+            steps {
+                echo 'Simple pipeline configured with Jenkinsfile and GitHub Webhook.'
+                sh 'echo Hello World'
+            }
+        }
+    }
+}
